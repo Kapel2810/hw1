@@ -48,15 +48,33 @@
 
 // ------ ex4 ----- 
 
-let divElement =document.getElementById('div-el')
+// let divElement =document.getElementById('div-el')
 
 
-const getNumber = () => {
- nice (showNumber)
+// const getNumber = () => {
+//  nice (showNumber)
+// }
+// const showNumber =()=> {
+//     divElement.innerHTML = 42
+// }
+// const nice = (callback) => {
+//     callback()
+// }
+
+//----- ex 5 ------
+
+let divElement = document.getElementById('div-el')
+
+let numbersList = [42, 128, 37, 81, 66]
+let number = Math.floor (Math.random() * numbersList.length)
+
+const getRandomNumberFromArray = () => {
+    amazing(showNumber)
 }
-const showNumber =()=> {
-    divElement.innerHTML = 42
+
+const showNumber = () => {
+    document.write ( ' Number ' + number)
 }
-const nice = (callback) => {
-    callback()
-}
+ const amazing =(callback) => {
+     callback()
+ }
