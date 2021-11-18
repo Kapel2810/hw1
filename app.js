@@ -81,17 +81,33 @@
 
 // ------ ex6----- 
 
+// let bodyElement = document.getElementById('body-box')
+// let color = '#'+Math.floor(Math.random()*16777215).toString(16)
+
+// const getRandomColor =() => {
+//  cool (showRandomColor)
+// }
+
+// const showRandomColor = () => {
+//     bodyElement.style.background = color
+// }
+
+// const cool = (paintCallback) =>{
+//     paintCallback()
+// }
+
+// ------ ex 7-----
+
 let bodyElement = document.getElementById('body-box')
-let color = '#'+Math.floor(Math.random()*16777215).toString(16)
 
-const getRandomColor =() => {
- cool (showRandomColor)
+const colorPage =() => {
+    nice(getColor)
 }
 
-const showRandomColor = () => {
-    bodyElement.style.background = color
+const getColor =() => {
+    bodyElement.style.backgroundColor = "green"
 }
 
-const cool = (paintCallback) =>{
+const nice = (paintCallback) => {
     paintCallback()
 }
