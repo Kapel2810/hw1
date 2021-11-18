@@ -98,16 +98,38 @@
 
 // ------ ex 7-----
 
+// let bodyElement = document.getElementById('body-box')
+
+// const colorPage =() => {
+//     nice(getColor)
+// }
+
+// const getColor =() => {
+//     bodyElement.style.backgroundColor = "green"
+// }
+
+// const nice = (paintCallback) => {
+//     paintCallback()
+// }
+
+//-----ex 8---- 
+
 let bodyElement = document.getElementById('body-box')
 
-const colorPage =() => {
-    nice(getColor)
+let colorsList = ['red', 'green', 'blue']
+//  let color = Math.floor(Math.random() * colorsList.length)
+
+const getRandomPageColorFromArray = () => {
+    amazing(showPageColor)
 }
 
-const getColor =() => {
-    bodyElement.style.backgroundColor = "green"
+const showPageColor = () => {
+
+    bodyElement.style.backgroundColor = colorsList[Math.floor(Math.random() * colorsList.length)]
+    bodyElement.innerText = "Painted Color: " + color
 }
 
-const nice = (paintCallback) => {
+const amazing = (paintCallback) => {
     paintCallback()
+
 }
