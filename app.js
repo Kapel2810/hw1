@@ -63,18 +63,35 @@
 
 //----- ex 5 ------
 
-let divElement = document.getElementById('div-el')
+// let divElement = document.getElementById('div-el')
 
-let numbersList = [42, 128, 37, 81, 66]
-let number = Math.floor (Math.random() * numbersList.length)
+// let numbersList = [42, 128, 37, 81, 66]
+// let number = Math.floor (Math.random() * numbersList.length)
 
-const getRandomNumberFromArray = () => {
-    amazing(showNumber)
+// const getRandomNumberFromArray = () => {
+//     amazing(showNumber)
+// }
+
+// const showNumber = () => {
+//     document.write ( ' Number ' + number)
+// }
+//  const amazing =(callback) => {
+//      callback()
+//  }
+
+// ------ ex6----- 
+
+let bodyElement = document.getElementById('body-box')
+let color = '#'+Math.floor(Math.random()*16777215).toString(16)
+
+const getRandomColor =() => {
+ cool (showRandomColor)
 }
 
-const showNumber = () => {
-    document.write ( ' Number ' + number)
+const showRandomColor = () => {
+    bodyElement.style.background = color
 }
- const amazing =(callback) => {
-     callback()
- }
+
+const cool = (paintCallback) =>{
+    paintCallback()
+}
