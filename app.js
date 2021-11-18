@@ -136,13 +136,29 @@
 
 //------ex9------
 
-divElement = document.getElementById('div-el')
-const  TIME_IN_SECONDS =1
+// divElement = document.getElementById('div-el')
+// const  TIME_IN_SECONDS =1
 
-const changeRandomNumber = () => {
-    setInterval(() => {
-        divElement.innerHTML = Math.floor(Math.random() * (100-1) +1 )
-    }, TIME_IN_SECONDS *1000);
+// const changeRandomNumber = () => {
+//     setInterval(() => {
+//         divElement.innerHTML = Math.floor(Math.random() * (100-1) +1 )
+//     }, TIME_IN_SECONDS *1000);
+// }
+
+//-----ex10 ----
+
+let bodyElement = document.getElementById('body-box')
+const TIME_IN_SECONDS = 3
+
+let interval = 0
+
+const getRandomColor = () => {
+  interval = setInterval(() => {
+    let some_color = '#' + Math.floor(Math.random() * 16777215).toString(16)
+        bodyElement.style.backgroundColor = some_color
+    }, TIME_IN_SECONDS * 1);
 }
 
-
+const stopInterval = () => {
+    clearInterval(interval)
+}
