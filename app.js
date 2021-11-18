@@ -32,16 +32,31 @@
 
 
 // ----- ex 3 ------
-let divElement = document.getElementById('div-el')
-let randomNumber = Math.floor(Math.random() * 100)
+// let divElement = document.getElementById('div-el')
+// let randomNumber = Math.floor(Math.random() * 100)
 
-const getRandomNumber = () => {
-    cool(showNumber)
-}
+// const getRandomNumber = () => {
+//     cool(showNumber)
+// }
 
-const showNumber = () => {
-    divElement.innerHTML = randomNumber
+// const showNumber = () => {
+//     divElement.innerHTML = randomNumber
+// }
+// const cool = (callback) => {
+//     callback()
+// }
+
+// ------ ex4 ----- 
+
+let divElement =document.getElementById('div-el')
+
+
+const getNumber = () => {
+ nice (showNumber)
 }
-const cool = (callback) => {
+const showNumber =()=> {
+    divElement.innerHTML = 42
+}
+const nice = (callback) => {
     callback()
 }
