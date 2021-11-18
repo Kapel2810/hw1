@@ -114,22 +114,35 @@
 
 //-----ex 8---- 
 
-let bodyElement = document.getElementById('body-box')
+// let bodyElement = document.getElementById('body-box')
 
-let colorsList = ['red', 'green', 'blue']
-//  let color = Math.floor(Math.random() * colorsList.length)
+// let colorsList = ['red', 'green', 'blue']
+// //  let color = Math.floor(Math.random() * colorsList.length)
 
-const getRandomPageColorFromArray = () => {
-    amazing(showPageColor)
+// const getRandomPageColorFromArray = () => {
+//     amazing(showPageColor)
+// }
+
+// const showPageColor = () => {
+
+//     bodyElement.style.backgroundColor = colorsList[Math.floor(Math.random() * colorsList.length)]
+//     bodyElement.innerText = "Painted Color: " + color
+// }
+
+// const amazing = (paintCallback) => {
+//     paintCallback()
+
+// }
+
+//------ex9------
+
+divElement = document.getElementById('div-el')
+const  TIME_IN_SECONDS =1
+
+const changeRandomNumber = () => {
+    setInterval(() => {
+        divElement.innerHTML = Math.floor(Math.random() * (100-1) +1 )
+    }, TIME_IN_SECONDS *1000);
 }
 
-const showPageColor = () => {
 
-    bodyElement.style.backgroundColor = colorsList[Math.floor(Math.random() * colorsList.length)]
-    bodyElement.innerText = "Painted Color: " + color
-}
-
-const amazing = (paintCallback) => {
-    paintCallback()
-
-}
