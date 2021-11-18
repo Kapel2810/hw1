@@ -18,15 +18,30 @@
 // }
 
 // ------ ex 2 ----
-let pBoxElement = document.getElementById('p-box')
-let inputElement = document.getElementById('input')
-let inputName = inputElement.value
+// let pBoxElement = document.getElementById('p-box')
 
-const addName = () => {
-    console.log('Katrina')
+// const addName = () => {
+//     console.log('Katrina')
 
+
+// }
+// const showName = (callback) => {
+//     callback()
+// }
+// showName(addName)
+
+
+// ----- ex 3 ------
+let divElement = document.getElementById('div-el')
+let randomNumber = Math.floor(Math.random() * 100)
+
+const getRandomNumber = () => {
+    cool(showNumber)
 }
-const showName = (callback) => {
+
+const showNumber = () => {
+    divElement.innerHTML = randomNumber
+}
+const cool = (callback) => {
     callback()
 }
-showName(addName)
